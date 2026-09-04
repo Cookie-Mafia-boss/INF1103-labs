@@ -9,7 +9,7 @@ username = "Im_am_a_SITstudent"
 bio = "Student"
 followers = 67
 
-#""
+#""""
 #ACTIVITY 3  (Assignment Variables)
 followers += 6767
 print("Day 1:", followers)
