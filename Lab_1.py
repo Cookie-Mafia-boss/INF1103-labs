@@ -1,16 +1,16 @@
-#ACTIVTY 1
+#ACTIVTY 1 (first post)
 print("===============")
 print("Welcome here!")
 print("This is my first post")
 print("===============")
 
-#ACTIVITY 2 
+#ACTIVITY 2  (Fun conditions)
 username = "Im_am_a_SITstudent"
 bio = "Student"
 followers = 67
 
 
-#ACTIVITY 3
+#ACTIVITY 3 
 followers += 6767
 print("Day 1:", followers)
 
@@ -30,7 +30,7 @@ print("Bio:", bio)
 print("Followers:", followers)
 
 
-#ACTIVITY 4
+#ACTIVITY 4  (Dynamic Profile)
 username = input("Enter Username: ")
 age = input("Enter Age: ")
 category = input("Enter Content Catogory: ")
@@ -49,3 +49,8 @@ print("Category:", category)
 #git commit -m "First Post" is just a brief note of what changes were made in this 
 #specific point of time
 
+# Step 1 #
+# git add first
+
+# Step 2 #
+# git commit -m "xxxx.py"
