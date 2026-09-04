@@ -48,7 +48,7 @@ if age>40 and category == "fun":
     print("How old is fun for you??")
 
 
-#
+
 #git commit acts as a save point so i can go back to this file if i mess up later on, 
 #meaning i can go back to this version 
 
