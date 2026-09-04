@@ -50,7 +50,10 @@ print("Category:", category)
 #specific point of time
 
 # Step 1 #
-# git add first
+# git add xxx.py
 
 # Step 2 #
 # git commit -m "xxxx.py"
+
+# Step 3 #
+# Use git log to see the history of changes
