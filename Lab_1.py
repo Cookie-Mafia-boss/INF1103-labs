@@ -1,16 +1,16 @@
-#ACTIVTY 1 (first post)
+#ACTIVTY 1 (first post) / #ACTIVITY 2  (Fun conditions)
 print("===============")
 print("Welcome here!")
 print("This is my first post")
 print("===============")
 
-#ACTIVITY 2  (Fun conditions)
+
 username = "Im_am_a_SITstudent"
 bio = "Student"
 followers = 67
 
 
-#ACTIVITY 3 
+#ACTIVITY 3  (Assignment Variables)
 followers += 6767
 print("Day 1:", followers)
 
@@ -30,9 +30,9 @@ print("Bio:", bio)
 print("Followers:", followers)
 
 
-#ACTIVITY 4  (Dynamic Profile)
+#ACTIVITY 4  (Dynamic Profile) /#ACTIVITY 5 (Fun Conditions)
 username = input("Enter Username: ")
-age = input("Enter Age: ")
+age = int(input("Enter Age: "))
 category = input("Enter Content Catogory: ")
 
 
@@ -42,6 +42,11 @@ print("====================")
 print("Username: ", username)
 print("Age: ", age)
 print("Category:", category)
+
+
+if age>40 and category == "fun":
+    print("How old is fun for you??")
+
 
 #git commit acts as a save point so i can go back to this file if i mess up later on, 
 #meaning i can go back to this version 
