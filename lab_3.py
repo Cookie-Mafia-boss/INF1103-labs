@@ -77,7 +77,7 @@ if delivery_input.isdigit():
 
     print(f"Amount of units left in Inventory : {new_delivery}")
     
-    tax = calculate_tax(new_delivery)
+    tax = delivery_input
 
     print(f"Taxable amount from deliveries : {tax}")
 
