@@ -2,6 +2,21 @@ print("=======================================================================")
 print("Smart Inventory Auditor")
 print("=======================================================================")
 
+#Read file
+def read_file():
+    saved_data = "C:/SIT_INF1103/INF1103/Labs/Inventory.txt"
+
+    try:
+        #read saved inventory data
+         with open(saved_data, 'r', encoding="utf8") as data:
+            content = data.read()
+            print("Existing inventory : ")
+            print(content)
+
+    except FileNotFoundError:
+        print("No file as such exists")
+
+        return(content)
 # Input Validation
 def get_valid_input():
     user_input = input("Enter Stock Quantity  :")
@@ -44,6 +59,8 @@ inventory_pro_max = 0
 deliveries_count = 0
 total_tax = 0.0
 
+read_file()
+
 #Main loop
 #continuous loop asking user to enter a stock quantity, until the user types quit
 while True:
@@ -52,6 +69,7 @@ while True:
     if validated_input == "quit":
         print("Successfully exited the programme")
         break
+
     
     elif validated_input is None:
         fail_reject += 1
@@ -60,10 +78,7 @@ while True:
         
         integer = validated_input
         
-    
         inventory_init = process_delivery(inventory_init, integer)
-        
-    
         tax_amount = calculate_tax(integer)
         total_tax += tax_amount
         
@@ -93,5 +108,5 @@ while True:
 #generate report
 generate_report(inventory_pro_max, fail_reject, deliveries_count, total_tax)
 
-#Save inventory_init = process_delivery(inventory_init, integer) data into a .txt file
+
 
